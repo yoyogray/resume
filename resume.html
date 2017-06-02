@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resume</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap-theme.min.css">
+    <script src='./script/jquery.js'></script>
+    <script src='./bootstrap/bootstrap.min.js'></script>
+    
+    <style>
+       body{
+           padding-top:70px;
+       } 
+       
+       
+       
+        /*<div class="panel panel-default">    <div class="collapse panel-collapse" id='collapseFour'>    <div class="carousel-inner">*/
+        
+        .panel-default .collapse .carousel-inner .img-responsive{
+            width:600px;
+            height:500px
+        }
+            
+        
+        
+    </style>
+</head>
+<body class='container'>
+   
+    <header>
+        <nav class='navbar navbar-inverse navbar-fixed-top'>
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand">Personal Resume</div>
+                    <button class='navbar-toggle' type='button' data-toggle='collapse' data-target='#divNav'>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id='divNav' class='collapse navbar-collapse'>
+                        <ul class='nav navbar-nav navbar-right'>
+                            <li>
+                                <button type='button' class='btn btn-success navbar-btn' data-toggle='modal' data-target='#divModal' title='Print'>打印</button>
+                                <div class="modal fade" id='divModal'>
+                                    <div class='modal-dialog'>
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type='button' class='close' data-dismiss='modal'><span>&times;</span></button>
+                                                <h4 class='modal-title'>print resume</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                print Preview 
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+                                                <buttun type='button' class='btn btn-primary'>Print</buttun>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type='button' class='btn btn-info navbav-btn' data-toggle='tooltip' data-placement='right' title='Download'>Download</button>                                
+                                <script>
+                                    $(function(){
+                                        $('[data-toggle="tooltip"]').tooltip();
+                                    })
+                                </script>
+                            </li>    
+                        </ul>    
+                </div>
+            </div>
+        </nav>
+        
+        
+        
+    </header>
+    <div class='row'>
+        <div class='col-sm-3'>
+            <div class="panel panel-default">
+                 <div class="panel-heading">personal info</div>
+                 <div class="panel-body">
+                     <img src="./image/头像.jpg" alt="me" class='img-responsive img-rounded img-thumbnail' style='margin-left:10px'>
+                    <p class='text-center text-primary'>Yue Grey</p>
+                    
+                    
+                    
+                    
+                    <address>
+                        <strong>Tarena.inc</strong><br>
+                        
+                        <span class="glyphicon glyphicon-home" title='Address'>  <code>哈尔滨理工大学</code></span><br>
+                        <span class="glyphicon glyphicon-home" title='PostalCode'><code>404300</code></span><br>
+                        <span class="glyphicon glyphicon-home" title='Mobile'><code>13804539156</code></span><br>
+                        <span class="glyphicon glyphicon-home" title='Email'><code>474851714@qq.com</code></span>
+                    </address>
+                 </div>
+            </div>
+            
+            <div class="panel panel-info">
+                <div class="panel-heading">personal skill</div>
+                 <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="text-muted">HTML5</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active " style='width:85%'></div>
+                            </div>
+                        </div>
+                        
+                        
+                         <div class="col-sm-3">
+                            <span class="text-muted">CSS3</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active progress-bar-warning  " style='width:70%'></div>
+                            </div>
+                        </div>
+                        
+                         <div class="col-sm-3">
+                            <span class="text-muted">javascript</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-success active " style='width:80%'></div>
+                            </div>
+                        </div>
+                        
+                         <div class="col-sm-3">
+                            <span class="text-muted">jquery</span>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped active " style='width:65%'></div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>                
+            </div>
+            
+            
+            
+            
+            
+            <div class="panel panel-primary">
+                <div class="panel-heading">contact me</div>
+                 <div class="panel-body">
+                    <form action="" class="form-horizontal">
+                        
+                        
+                        <div class="form-group">
+                            <label for='email' class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" id='home' class='form-control' placeholder='Home'>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <label for='name' class="col-sm-2 control-label">name</label>
+                            <div class="col-sm-10">
+                                <input type="name" id='email' class='form-control' placeholder='Name'>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <!--<label for='email' class="col-sm-2 control-label">name</label>-->
+                            <div class="col-sm-12" >
+                              <button class='btn btn-primary pull-right' type='submit'>send</button>
+                              <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </form>
+                    
+                 </div>                
+            </div>
+            
+            
+            
+        </div>
+        <div class='col-sm-9'>
+            <div class="jumbotron">
+                <div class='row'>
+                    <div class="col-sm-9">
+                        <div><img src="./image/项目1.jpg" alt="" style='width:200px ;height:200px'></div>
+                    </div>
+                    
+                    <div class='col-sm-3'>
+                        <p class='text-right small'>热爱技术</p>
+                        <p class='text-right small'>热爱技术</p>
+                        <p class='text-right small'>热爱技术</p>
+                        <p class='text-right small'>热爱技术</p>
+                        <p class='text-right small'>热爱技术</p>
+                    </div>
+                </div>
+            </div>
+            
+         
+            <div class="panel-group" id='accordion'>
+                
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseOne" data-toggle='collapse' data-parent='#accordion'>Work Experense</a>
+                        </div>
+                    </div>
+                    <div class="panel-collapse collapse" id='collapseOne'>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-success ">
+                                    <div class="row">
+                                        <div class="col-sm-4">2014年就读哈尔滨理工大学</div>
+                                        <div class="col-sm-4">2016年实习于哈尔滨渡一信息技术有限公司</div>
+                                        <div class="col-sm-4">前端软件工程师</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">2014年就读哈尔滨理工大学</div>
+                                        <div class="col-sm-4">2016年实习于哈尔滨渡一信息技术有限公司</div>
+                                        <div class="col-sm-4">前端软件工程师</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4">2014年就读哈尔滨理工大学</div>
+                                        <div class="col-sm-4">2016年实习于哈尔滨渡一信息技术有限公司</div>
+                                        <div class="col-sm-4">前端软件工程师</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseTwo" data-toggle='collapse' data-parent='#accordion'>education</a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-collapse collapse" id='collapseTwo'>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-warning">
+                                    <div class="row">
+                                        <div class="col-sm-4">2014年入学哈尔滨理工大学</div>
+                                        <div class="col-sm-4">学院：自动化学院</div>
+                                        <div class="col-sm-4">专业：自动化</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="panel-title">
+                            <a href="#collapseThree" data-toggle='collapse' data-parent='#accordion'>project </a>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-collapse collapse" id='collapseThree'>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item list-group-item-danger">
+                                    <div class="row">
+                                        <div class="col-sm-4">项目名称</div>
+                                        <div class="col-sm-4">所用技能</div>
+                                        <div class="col-sm-4">完成周期</div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item list-group-item-default">
+                                    <div class="row">
+                                        <div class="col-sm-4">贪吃蛇</div>
+                                        <div class="col-sm-4">html + css + 原生js</div>
+                                        <div class="col-sm-4">5天</div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-4">优酷轮播图</div>
+                                        <div class="col-sm-4">原生js   jquery：animate   css3:@keyframes + animation(3d)</div>
+                                        <div class="col-sm-4">每个差不多2天</div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-4">德邦物流求职页</div>
+                                        <div class="col-sm-4">html + css + js + jquery + ajax (配置wampserver环境，从本地服务器请求数据，到页面进行展示)</div>
+                                        <div class="col-sm-4">一周</div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-4">豆瓣音乐搜索页</div>
+                                        <div class="col-sm-4">jq + ajax + jsonp (通过豆瓣后台api跨域请求豆瓣后台数据进行展示)</div>
+                                        <div class="col-sm-4">一周</div>
+                                    </div>
+                                </li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                         <div class="panel-title">
+                            <a href="#collapseFour" data-toggle='collapse' data-parent='#accordion'>project </a>
+                        </div>
+                    </div>
+                    <div class="collapse panel-collapse" id='collapseFour'>
+                        <div class="panel-body">
+                            <div id="divCarousel" class='carousel slide' data-ride='carousel'>
+                                <ol class="carousel-indicators">
+                                    <li class="active" data-target='divCarousel' data-slide-to='0'></li>
+                                    <li  data-target='divCarousel' data-slide-to='1'></li>
+                                    <li  data-target='divCarousel' data-slide-to='2'></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="./image/项目1.jpg" alt=""class='img-responsive img-rounded'>
+                                        <div class="carousel-caption">项目1</div>
+                                    </div>
+                                    <div class="item ">
+                                        <img src="./image/项目2.jpg" alt=""class='img-responsive img-rounded'>
+                                        <div class="carousel-caption">项目2</div>
+                                    </div>
+                                    <div class="item ">
+                                        <img src="./image/项目3.jpg" alt=""class='img-responsive img-rounded'>
+                                        <div class="carousel-caption">项目3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                            <div class="row">
+                                <div class="col-xs-6 col-md-3">
+                                    <a href="#" class="thumbnail">
+                                    <img src="./image/头像.jpg" alt="...">
+                                    </a>
+                                </div>
+                                  <div class="col-xs-6 col-md-3">
+                                    <a href="#" class="thumbnail">
+                                    <img src="./image/头像.jpg" alt="...">
+                                    </a>
+                                </div>
+                                  <div class="col-xs-6 col-md-3">
+                                    <a href="#" class="thumbnail">
+                                    <img src="./image/头像.jpg" alt="...">
+                                    </a>
+                                </div>  <div class="col-xs-6 col-md-3">
+                                    <a href="#" class="thumbnail">
+                                    <img src="./image/头像.jpg" alt="...">
+                                    </a>
+                                </div>  <div class="col-xs-6 col-md-3">
+                                    <a href="#" class="thumbnail">
+                                    <img src="./image/头像.jpg" alt="...">
+                                    </a>
+                                </div>
+                          
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </div>
+                
+                
+                
+            </div>
+            
+       
+        </div>
+    </div>
+    
+    <footer class='navbar-default navbar-fixed-bottom text-center'>
+        <p>
+            &copy: Copyright: www.yueGrey.com
+        </p>
+    </footer>
+</body>
+</html>
+
+
+<!--
+            <div class="carousel slide" id='carousel-example-generic' data-ride='carousel'>
+                <ol class="carousel-indicators">
+                    <li data-target='#carousel-example-generic' data-slide-to='0' class></li>
+                    <li data-target='#carousel-example-generic' data-slide-to='1' class></li>
+                    <li data-target='#carousel-example-generic' data-slide-to='2' class></li>
+                </ol>
+                <div class="carousel-inner" role='listbox'>
+                
+                </div>
+            </div>-->
